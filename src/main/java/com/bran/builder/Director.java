@@ -15,5 +15,6 @@ public class Director {
 
     public static void main(String[] args) {
         Bottle bottle = Director.constructBottle(new ConcreteBuilder());
+        System.out.println(bottle.getName() + " " + bottle.getHigh() + " " + bottle.getWeight());
     }
 }

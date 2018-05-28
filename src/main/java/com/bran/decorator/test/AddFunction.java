@@ -8,7 +8,7 @@ package com.bran.decorator.test;
  * @author antiumbo
  * @date on 2018/5/25
  **/
-public abstract class AddFunction implements IFunction {
+public abstract class AddFunction implements IFunction{
     protected IFunction iFunction;
 
     protected AddFunction(IFunction iFunction) {

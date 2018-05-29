@@ -14,4 +14,5 @@ public abstract class AddFunction implements IFunction{
     protected AddFunction(IFunction iFunction) {
         this.iFunction = iFunction;
     }
+
 }

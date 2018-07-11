@@ -6,8 +6,11 @@ package com.bran.adaptor.test;
  **/
 public class TestAdapter {
     public static void main(String[] args) {
+        //创建新的适配器
         Adapter adapter = new Adapter(new ChinesePlugin());
+        // 把适配器插入到美国电源
         AmericanStandard americanPlugin = new AmericanPlugin(adapter);
+        // 美国电源输出电压变成了220v
         americanPlugin.out110v();
     }
 }

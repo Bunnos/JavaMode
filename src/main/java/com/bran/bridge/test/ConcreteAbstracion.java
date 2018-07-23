@@ -1,6 +1,5 @@
 package com.bran.bridge.test;
 
-import com.bran.builder.ConcreteBuilder;
 
 /**
  * @author antiumbo

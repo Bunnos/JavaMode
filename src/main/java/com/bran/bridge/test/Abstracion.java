@@ -1,6 +1,5 @@
 package com.bran.bridge.test;
 
-import org.omg.CORBA.ORB;
 
 /**
  * @author antiumbo

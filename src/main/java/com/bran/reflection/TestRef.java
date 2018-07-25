@@ -5,6 +5,9 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
 /**
+ * 反射
+ * 获取类内部信息
+ *
  * @author antiumbo
  * @date on 2018/6/1
  **/

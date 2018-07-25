@@ -14,5 +14,8 @@ public abstract class MainObserver {
         this.mainClass = mainClass;
     }
 
+    /**
+     * 触发方法
+     */
     abstract void update();
 }

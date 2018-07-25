@@ -10,9 +10,9 @@ package com.bran.decorator.test;
  * @date on 2018/5/25
  **/
 public abstract class AddFunction implements IFunction {
-    protected AddFunction addFunction;
+    protected IFunction iFunction;
 
-    protected AddFunction(AddFunction addFunction) {
-        this.addFunction = addFunction;
+    protected AddFunction(IFunction iFunction) {
+        this.iFunction = iFunction;
     }
 }

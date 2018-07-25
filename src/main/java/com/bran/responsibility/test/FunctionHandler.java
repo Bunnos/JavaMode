@@ -2,7 +2,7 @@ package com.bran.responsibility.test;
 
 /**
  * 责任链模式
- * 把自身传进去。
+ * 每个责任链都持有下一个责任链
  *
  * @author antiumbo
  * @date on 2018/5/28

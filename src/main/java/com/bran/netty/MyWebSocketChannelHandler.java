@@ -1,0 +1,24 @@
+package com.bran.netty;
+
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.handler.codec.http.HttpClientCodec;
+import io.netty.handler.codec.http.HttpObjectAggregator;
+import io.netty.handler.stream.ChunkedWriteHandler;
+
+/**
+ * 初始化连接时的各个组件
+ *
+ * @author antiumbo
+ * @date on 2018/7/31
+ **/
+public class MyWebSocketChannelHandler extends ChannelInitializer<SocketChannel> {
+
+    @Override
+    protected void initChannel(SocketChannel e) throws Exception {
+        e.pipeline().addLast("http-codec", new HttpClientCodec());
+        e.pipeline().addLast("aggregator", new HttpObjectAggregator(65536));
+        e.pipeline().addLast("http-chunked", new ChunkedWriteHandler());
+        e.pipeline().addLast("handler", new MyWebSocketHandler());
+    }
+}

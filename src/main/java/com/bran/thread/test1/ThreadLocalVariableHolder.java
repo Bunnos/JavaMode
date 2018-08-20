@@ -1,7 +1,5 @@
 package com.bran.thread.test1;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -42,6 +40,7 @@ public class ThreadLocalVariableHolder {
             return random.nextInt(10000);
         }
     };
+
     public static void increment() {
         value.set(value.get() + 1);
     }

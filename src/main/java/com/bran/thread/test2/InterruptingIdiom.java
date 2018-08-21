@@ -22,7 +22,6 @@ class Blocked3 implements Runnable {
     @Override
     public void run() {
         try {
-
             while (!Thread.interrupted()) {
                 NeedsCleanup n1 = new NeedsCleanup(1);
                 try {
